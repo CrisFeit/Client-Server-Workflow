@@ -1,10 +1,10 @@
 const path = require('path');
 
 module.exports = {
-    context : path.resolve(__dirname,'app/client'),
+    context: path.resolve(__dirname, 'app/client'),
     entry: [
-         './js/index.js',
-         './scss/style.scss',
+        './js/index.js',
+        './scss/style.scss',
     ],
 
     output: {
