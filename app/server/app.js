@@ -13,9 +13,7 @@ class App {
 
   middlewares() {
     this.server.use(express.json());
-    this.server.use(express.static(path.join(__dirname,'dist/assets')))
-    this.server.set('views',path.join(__dirname,'view'));
-    this.server.set('view engine' , 'pug')
+    this.server.use(express.static(path.join(__dirname,'public/assets')))
   }
 
   routes() {

@@ -3,12 +3,12 @@ const path = require('path');
 module.exports = {
     context: path.resolve(__dirname, 'app/client'),
     entry: [
-        './js/index.js',
-        './scss/style.scss',
+        './scripts/index.js',
+        './styles/style.css',
     ],
 
     output: {
-        path: path.resolve(__dirname, 'app/dist/assets')
+        path: path.resolve(__dirname, 'app/public/assets')
     },
 
     module: {

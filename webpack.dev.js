@@ -1,3 +1,4 @@
+require('dotenv/config');
 const merge = require('webpack-merge')
 const common = require('./webpack.common')
 
@@ -6,7 +7,7 @@ module.exports = merge(common, {
 
   devServer: {
     proxy: {
-      '/': 'http://localhost:3000'
+      '/': `http://localhost:${process.env.PORT || 3000}`
     }
   },
 
@@ -18,7 +19,6 @@ module.exports = merge(common, {
           'style-loader',
           'css-loader',
           'postcss-loader',
-          'sass-loader'
         ]
       }
     ]
