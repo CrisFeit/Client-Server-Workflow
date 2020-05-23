@@ -8,7 +8,7 @@ module.exports = {
     ],
 
     output: {
-        path: path.resolve(__dirname, 'app/public/assets')
+        path: path.resolve(__dirname, 'app/server/public/assets')
     },
 
     module: {

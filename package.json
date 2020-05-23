@@ -2,12 +2,13 @@
   "name": "full-stack-workflow",
   "version": "1.0.0",
   "description": "",
-  "main": "app/server",
+  "main": "app/server/server.js",
   "scripts": {
     "dev": "concurrently 'npm:client' 'npm:server'",
     "client": "webpack-dev-server --open --config webpack.dev.js",
-    "server": "nodemon app/server",
-    "build": "webpack --config webpack.prod.js"
+    "server": "nodemon app/server/server.js",
+    "build": "webpack --config webpack.prod.js",
+    "start": "node app/server/server.js"
   },
   "dependencies": {
     "express": "^4.17.1"
@@ -17,13 +18,11 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.9.6",
-    "@babel/node": "^7.8.7",
     "@babel/plugin-proposal-async-generator-functions": "^7.8.3",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/plugin-syntax-async-generators": "^7.8.4",
     "@babel/plugin-transform-runtime": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
-    "autoprefixer": "^9.8.0",
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "concurrently": "^5.2.0",

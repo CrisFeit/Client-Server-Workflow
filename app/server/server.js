@@ -1,6 +1,6 @@
-/* eslint-disable linebreak-style */
+require('dotenv/config');
 const express = require('express');
-let routes = require('./routes/routes');
+let routes = require('./router');
 const path = require('path');
 
 class App {
@@ -21,4 +21,8 @@ class App {
   }
 }
 
-module.exports = new App().server;
+const app = new App().server;
+
+app.listen(process.env.PORT || 3000 ,()=>{
+  console.log('Node is listening on port 3000...');
+});
