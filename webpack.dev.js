@@ -19,8 +19,15 @@ module.exports = merge(common, {
           'style-loader',
           'css-loader',
           'postcss-loader',
-        ]
-      }
+          {
+            loader: 'sass-loader',
+            options: {
+              // Prefer `dart-sass`
+              implementation: require('sass'),
+            },
+          },
+        ],
+      },
     ]
   }
 })

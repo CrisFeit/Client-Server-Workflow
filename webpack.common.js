@@ -3,8 +3,8 @@ const path = require('path');
 module.exports = {
     context: path.resolve(__dirname, 'app/client'),
     entry: [
-        './scripts/index.js',
-        './styles/style.css',
+        './js/index.js',
+        './sass/App.scss',
     ],
 
     output: {
@@ -21,9 +21,9 @@ module.exports = {
                     options: {
                         presets: ['@babel/preset-env'],
                         plugins: ['@babel/plugin-transform-runtime']
-                    }
+                    },
                 }
-            }
+            },
         ]
     }
 }
