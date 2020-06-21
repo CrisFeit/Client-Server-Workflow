@@ -11,6 +11,10 @@ module.exports = merge(common, {
     }
   },
 
+  output: {
+    path: path.resolve(__dirname, 'app/server/public/assets/')
+  },
+
   module: {
     rules: [
       {

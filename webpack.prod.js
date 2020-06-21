@@ -13,6 +13,10 @@ module.exports = merge(common, {
     new CleanWebpackPlugin(),
   ],
 
+  // output: {
+  //   path: path.resolve(__dirname, 'app/dist/')
+  // },
+
   module: {
     rules: [
       {
