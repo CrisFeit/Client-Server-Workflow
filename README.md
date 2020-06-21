@@ -8,12 +8,12 @@
 ### Client
 * Suport for Typescript
 * Suport for ES new features
-* Suport for Css new features
+* Suport for CSS new features
 * Sass
-* PostCss
+* PostCSS
 * Live Reload
 * ITCSS Architecture
-* Icons [Font-Awesome](https://fontawesome.com/v4.7.0/icons/) Build in Sass
+* Icons [Font-Awesome](https://fontawesome.com/v4.7.0/icons/) build in Sass
 * install any framework with [webpack-loaders](https://webpack.js.org/loaders/#frameworks)
 
 ### Server
